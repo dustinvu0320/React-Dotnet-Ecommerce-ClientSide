@@ -1,0 +1,39 @@
+*** Home UI
+
+- Add Banner on Home Page
+ + Create Banner UI in Common Page Component
+ + Search items function inside here
+
+- Store Search Value in Redux
+ + Create search item inside menuItemSlice
+ + Handle search input and setValue for search on Banner
+
+- Search in Banner
+ + Implement filter menuItemList from search in store
+
+- Show all Category for Filter
+ + Filter based on CategoryList in MenuItemList Component
+
+- Category Filters in Action
+ + Implement handleCategoryClick function to handle filter for Category
+
+- Sorting in Action : MenuItemList
+ + Create SD_SortTypes for price or name
+ + Implement handleSortClick & sort inside handleFilters for Sorting
+
+- Skip Getting Shopping Cart
+ + Use skip to delay the useGetShoppingCartQuery
+
+- Authentication and Authorization End Points
+ + Use prepareHeaders to send back the token to API endpoint for Authorization
+ + Adding prepareHeaders for menuItemApi, orderApi, paymentApi, shoppingCartApi
+
+- From API:
+ + Add [Authorize(Roles = SD.Role_Admin)] for MenuItemController
+ + Add [Authorize] for OrderController
+
+- Deployment:
+ + Install Azure Tools extension
+ + Create App Service Web after sign in
+ + Choose: Node 18, Free F1
+ + After Resource has been created, deploy our code to the resource

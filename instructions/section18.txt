@@ -1,0 +1,37 @@
+*** Shopping Cart
+
+-  Setup Shopping Cart Query and Mutation
+ + Create shoppingCartApi to work on API endpoint & fetch data
+  * Use invalidatesTags to make sure API endpoint will be updated & fetched again
+  * Add this into Redux Store
+
+- Add to Cart in Action
+ + Create handleAddToCart function to add item into ShoppingCart
+
+- Create Mini Loader Component for Add Button
+
+- Create a Main Loader Component for Pages
+
+- Add MiniLoader to AddCart button in Details Page
+
+- Add cartItemModel & shoppingCartModel interfaces
+
+- Get Shopping Cart and Store in Slice
+ + Create shoppingCartSlice in Redux Store
+ + Set cartItems into Store
+ 
+- Work ShoppingCart Page
+ + Create CartSummary Component to display the cartItems store
+
+- Add Reducers to Shopping Cart Slice
+ + Implement updateQuantity & removeFromCart functions inside shoppingCartSlice
+
+- Handle Shopping Cart Functional
+ + Update shoppingCart from API as well as shoppingCart from Redux Store
+
+- Show Distinct Items in Cart by getting length of shoppingCart from Store
+
+- Implement Display Pickup Details (order total, user name, phone, email, ...)
+ + Create method to calculate grand total and # of Items
+ + Create method to handle inputs by Implementing inputHelper Component
+ + Add Loading Component to work on Submit Button

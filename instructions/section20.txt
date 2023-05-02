@@ -1,0 +1,30 @@
+*** Payment
+
+- Load User Details of Logged in User for Payment
+
+- Integrate Stripe and React https://stripe.com/docs/stripe-js/react
+ + Install react stripe js
+
+- Create endpoint for Payment Api
+ + Create paymentApi to invoke Payment POST Api endpoint
+
+- Calling Payment API
+ + Call PaymentApi to get client-secret and navigate to Payment Page with that client-secret
+ + navigate to Payment Page with a State
+
+- Use Location State to retrieve state data sending over navigation
+
+- Work on React Stripe feature for PaymentPage and Payment Form
+ + Load Publishable key from Stripe Account
+ + Then get clientSecret sending from apiResult endpoint
+
+- Order Summary UI
+ + Work on Payment Page UI on right side
+ + Create OrderSummary component on left side
+
+- Local Interfaces : Create orderSummaryProps for apiResult and userInput Interface
+
+- Dynamic OrderSummary by setting all data from Props to UI
+
+- Stripe Processing : implement useElements hook from Stripe js React
+ + Add redirect: "if_required" to stop redirect to new url after submitting payment

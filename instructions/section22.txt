@@ -1,0 +1,33 @@
+*** MenuItem
+
+- Create MenuItemList Page
+ + Only Admin allows to manipulate the menuItemList
+ + Get MenuItem data from Api and make page dynamic
+
+- Create a MenuItemUpsert : serving for both update and insert new items
+
+- Controller Components Menu Item
+ + Work on functionality for handle input and fetch Api
+ 
+- Upload Image in React
+ + Create function handleFileChange to upload image file
+
+- Menu Item API Mutations
+ + Implement create, update, delete MenuItem in menuItemApi
+
+- Create handleSubmit to work on Create Menu Item
+ + Implement handleSubmit to work on formData
+ + Add Back to MenuItemList Page Button
+
+- Load Menu Item to Update for API
+ + GetMenuItem by id from API then populate data on form for update
+
+- Update Menu Item Feature
+ + If there is "id" => handle Update. If not, handle create
+
+- Category Dropdown
+ + Add SD_Categories to make select dropdown for Category in MenuItem
+
+- Delete Menu Item Feature
+ + Create handleMenuItemDelete function to help delete api for MenuItem
+ + Add toast promise for deleteMenuItem Api

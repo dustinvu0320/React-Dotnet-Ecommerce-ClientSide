@@ -1,0 +1,48 @@
+*** Order
+
+- Create a new Order Api endpoint
+ + Add this Api to Store
+
+- Create Order Object to Create Order
+ + Add static details SD for order Status
+ + Create orderDetailsDTO inside PaymentForm to extract data sending from Payment Page
+
+- Work on CreateOrder data and fetching to API in PaymentForm
+ + Work closely with API to find out and match with request and response data
+
+- Order Confirmed Logic
+ + After payment is successful, navigate to Order Confirmed Page with orderHeaderId
+
+- Implement Order Confirmation Page
+
+- Get Order Endpoints in orderApi
+
+- MyOrder UI Page
+ + Wrap Page withAuth to make sure about authentication
+ + Create orderDetailModel and orderHeaderModel interface to match with api result getting after submit payment
+ + From that data, we can extract the order detail info data 
+
+- Make a new component for Order List
+
+- Create new OrderDetails Page
+
+- Manage Orders Header based on Role
+
+- Create Status Color Helper Method
+
+- OrderSummary
+ + Display Badge for Order Status for 
+ + Add Back to Order Button
+ + Add Buttons for Next Status : only Admin allowed to do change order status
+
+- Order Status Badge on Order List
+
+- Order API - PUT Endpoint : Admin will be able to update status of Orders
+ + Implement updateOrderHeader for orderApi
+
+- Update Order Status feature on UI
+ + Create methods to handle NextStatus or Cancel Order using updateOrderHeader Api
+ + Cancel & Completed Buttons Condition
+
+- Create All Orders Page for Admin only to wrap withAdminAuth HOC
+

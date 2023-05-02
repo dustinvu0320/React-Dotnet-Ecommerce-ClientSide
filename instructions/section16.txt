@@ -1,0 +1,30 @@
+*** Home Page
+
+- Create react app with TypeScript https://create-react-app.dev/docs/getting-started
+ + npx create-react-app ecommerce_client --template typescript
+
+- File clean up
+
+- Install Bootstrap & Bootstrap Icons
+ + import bootstrap inside index.tsx
+
+- Components folder: use for small components in Pages or reusable components
+- Pages folder: Page will have many components inside
+
+- Create Footer & Header inside Components inside Layout
+ + Add these components inside App.tsx
+
+- Fetch MenuItem from API at App.tsx
+ + Use useEffect to fetch
+ + Convert json to typescript interface for menuItemModel from data
+
+- Create MenuItemList & MenuItemCard component inside Page MenuItems
+ + List all menuItems in Home Page
+
+- Work on HomePage UI
+ + Create html/css Bootstrap for MenuItemCard
+
+- Add Routing - intstall React RouterDom and set up routes
+
+- Create MenuItem Detail Page
+ + Render to MenuItemDetail when clicking on each MenuItem

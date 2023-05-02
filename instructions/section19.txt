@@ -1,0 +1,59 @@
+*** Authentication and Authorization
+
+- Create Register & Login Pages
+ + Add Routes and Link on Header
+
+- Add Auth Api to implement fetching POST data for register and login
+
+- Authentication Slice and User Interface
+ + Create a userModel Interface
+ + Add user Store by creating userAuthSlice
+
+- Controller Components in Register
+ + Create SD in Utility to store static details value
+ + Work on input for Register Page
+
+- Create Response API Interface
+
+- Implement handleSubmit for Register User Page
+
+- Work on Login Page to implement fetching api data
+
+- Add Token to LocalStorage
+
+- Decode JWT Token
+ + Install jwt-decode : to help extract token to get infomation of user
+ + Get token after login, jwt decode token and save all these user info into Redux Store
+
+- Toggle Login and Logout button
+
+- Login and Logout in Action
+ + Delete token from LocalStorage
+ + Set userStore to be empty
+
+- From Main Root App.tsx, get user token from LocalStorage
+
+- Toastify Notifications: nofi on UI Page
+ + Install React Toastify
+ + Add Toastify Nofi to some places when funtional features get error or success
+ + Make sure to import Toastify css and Container in index.tsx
+
+- Add Loader on Register
+
+- Add Test Components for Authentication and Authorization : based on Roles (Admin or Customer)
+ + Higher Order Component: help to accomplish the authentication
+ + After authentication, all users can be access to AuthenticationTest. But after Authorization, only Admin role allowed to access AuthenticationTestAdmin
+
+- Authentication with HOC (Higher-Order Components)
+https://legacy.reactjs.org/docs/higher-order-components.html
+ + Create withAuth Component in HOC folder to verify the Authentication
+ + Wrap our Component or Page with withAuth Component
+
+- Authorization with HOC
+ + Create withAdminAuth Component to extract token and verify Admin Role for Authorization
+
+- Only Authenticated User can Add to Cart
+ + Make sure user login before being able to add items to cart
+
+- Dynamic User ID
+ + Get user from Store and set userId for API

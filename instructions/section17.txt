@@ -1,0 +1,23 @@
+*** Setup Redux & Redux ToolKit
+
+- Install: npm install @reduxjs/toolkit react-redux
+
+- Implement Redux Store to store menuItem in app
+ + Export the RootState type in store.ts which used for TS purpose
+
+- Go to Root level index.tsx to set up Provider for React Redux
+
+- Use Redux Query to fetch api
+ + Create menuItemApi inside Apis folder to use Redux Query Api
+
+- When we register the Api, make sure to add that in middleware
+ + Default configuration needed
+
+- First, we fetch data from Api using Redux Toolkit
+ + Then, we'll be able to set & save data into Redux Store
+
+- Remember to return Loading Component when Api is loading data
+
+- Load MenuItem Detail
+ + Use useParams from ReactRouter to actually get {id} from url 
+ + Work on manage Quantity of item
